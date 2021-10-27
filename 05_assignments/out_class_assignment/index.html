@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <style>
+            /* CSS */
+            
+        </style>
+        
+        <title>I Spy</title>
+    </head>
+    <body>
+        <!-- HTML -->
+        
+        <h1>Welcome to I spy</h1>
+        <h2>Use the dropdown menu to select an object you would like to find</h2>
+        
+        <!--Name of user-->
+        <input type='text' id='user-name' placeholder='Type your name'></input><br>
+        
+        <!--Dropdown menu-->
+        <select id="itemsList">
+            <option value="mermaid">Mermaid</option>
+            <option value="duck">Small Duck</option>
+            <option value="dog">Dog</option>
+        </select><br>
+        
+        <!--Image-->
+        <div>
+            <img src="https://thefwa.com/dyn/resources/Case_Model_Case/extra2/3/12253/1580435093/538_span14/5e33853f13486extra-visuals-optional-2-small.png">
+        </div>
+        
+        <h3>Where is the object you selected located?</h3>
+        <!--Answer Choices-->
+        <input type='radio' name='corner' value="topLeft">Top Left</input><br>
+        <input type='radio' name='corner' value="topRight">Top Right</input><br>
+        <input type='radio' name='corner' value="bottomLeft">Bottom Left</input><br>
+        <input type='radio' name='corner' value="bottomRight">Bottom Right</input><br>
+        <button>Check</button>
+       
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            // JS
+            
+            
+        </script>
+    </body>
+</html>
