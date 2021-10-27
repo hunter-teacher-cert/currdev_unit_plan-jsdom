@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+        <style>
+            /* CSS */
+
+            #challengesTable {
+                width: 50%;
+                margin: 0 auto;
+                font-size: 1.5em;
+            }
+
+        </style>
+        
+        <title>DOM Challenge</title>
+    </head>
+    <body>
+        <!-- HTML -->
+
+        <div class="container">
+            <table class="table" id="challengesTable">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Difficulty (+extension)</th>
+                        <th scope="col">Challenge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr> -->
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--<script src="script.js"></script>-->
+        <script>
+            // JS
+
+            var challenges = [
+                {
+                    "name":"Meme Generator",
+                    "src":"meme.html",
+                    "difficulty":"🔥(🔥)"
+                },
+                {
+                    "name":"Color Generator",
+                    "src":"color.html",
+                    "difficulty":"🔥(🔥🔥)"
+                },
+                {
+                    "name":"Password Generator",
+                    "src":"password.html",
+                    "difficulty":"🔥🔥(🔥)"
+                },
+                {
+                    "name":"Reviews Cycler",
+                    "src":"reviews.html",
+                    "difficulty":"🔥🔥(🔥)"
+                },
+                {
+                    "name":"Menu Selector",
+                    "src":"menu.html",
+                    "difficulty":"🔥🔥(🔥)"
+                },
+                {
+                    "name":"Magazine Message Speller",
+                    "src":"magazine.html",
+                    "difficulty":"🔥🔥🔥(🔥)"
+                },
+                {
+                    "name":"Todo List",
+                    "src":"todo.html",
+                    "difficulty":"🔥🔥🔥(🔥)"
+                },
+                {
+                    "name":"Quizzer",
+                    "src":"quizzer.html",
+                    "difficulty":"🔥🔥🔥(🔥🔥)"
+                },
+                {
+                    "name":"Calculator",
+                    "src":"calculator.html",
+                    "difficulty":"🔥🔥🔥🔥(🔥)"
+                },
+                {
+                    "name":"Keymasher",
+                    "src":"keymasher.html",
+                    "difficulty":"🔥🔥🔥🔥🔥"
+                },
+            ];
+
+            // <!-- <tr>
+            //     <th scope="row">1</th>
+            //     <td>Mark</td>
+            //     <td>Otto</td>
+            //     <td>@mdo</td>
+            //   </tr> -->
+            
+            var tbody = document.querySelector('tbody');
+            challenges.forEach(function(challenge,i){
+                tbody.innerHTML += `
+                    <tr>
+                        <th scope="row">${i+1}</th>
+                        <td>${challenge.difficulty}</td>
+                        <td><a href=${challenge.src}>${challenge.name}</a></td>
+                    </tr>
+                `;
+            });
+            
+        </script>
+    </body>
+</html>

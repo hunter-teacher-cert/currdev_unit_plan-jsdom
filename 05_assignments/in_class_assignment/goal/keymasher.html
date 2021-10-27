@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,700,300,400' rel='stylesheet' type='text/css'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+        <style>
+            /* CSS */
+            .wrapper {
+                margin: auto;
+                width: 80%;
+                border: 0px solid #000;
+                padding: 10px;
+                text-align: center;
+            }
+            h1 {
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 6em;
+                line-height: 2em;
+                letter-spacing: 7px;
+                color: #707070;
+            }
+            p, label {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: 1.5em;
+                line-height: 1em;
+                margin: 20px;
+            }
+            input {
+                font-family: 'Open Sans', sans-serif;
+                /* font-size: 1.5em; */
+                text-align: center;
+            }
+            label {
+                font-size: 2em;
+            }
+            #num {
+                font-size: 2em;
+            }
+
+            #reset {
+                border: 1px solid black;
+            }
+            #reset:hover {
+                background-color: #FFAEAE;
+            }
+            
+            .red {
+                color: red;
+            }
+        </style>
+        
+        <title>DOM Challenge</title>
+    </head>
+    <body>
+        <!-- HTML -->
+        <div class="wrapper">
+            <h1>KeyMasher</h1>
+            <p id="countdown">When you begin typing, you will have 3 seconds to type as much text as you can.</p>
+            <input id="text" type="text" value="" size="100">
+            <p>You have typed
+                <span id="num">0</span> characters.</p>
+            <p id="wpm"></p>
+            
+            <!-- <input id="reset" type="button" value="reset" class="btn btn-lg"> -->
+        
+        </div>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--<script src="script.js"></script>-->
+        <script>
+            // JS
+            
+            var _0x2333=['#num','#countdown','#FFAEAE','105488OOVjch','179187yOGBjY','keyup','582labvnV','style','Time\x20is\x20up!','241ltnNZh','focus','addEventListener','innerHTML','270015KQwYwr','58UYZOgd','round','5087ObGNVU','target','5IJCqDj','65375qrkzuG','#B0E57C','querySelector','disabled','backgroundColor','1RnuSlM','#text','118362gEBdYP'];function _0x5674(_0x1f5ad3,_0x3fac51){_0x1f5ad3=_0x1f5ad3-0x1a9;var _0x2333b9=_0x2333[_0x1f5ad3];return _0x2333b9;}var _0x18654d=_0x5674;(function(_0x588a13,_0x4271c4){var _0x4835b2=_0x5674;while(!![]){try{var _0x2af2d0=-parseInt(_0x4835b2(0x1c3))+-parseInt(_0x4835b2(0x1bf))*-parseInt(_0x4835b2(0x1bc))+-parseInt(_0x4835b2(0x1ad))*-parseInt(_0x4835b2(0x1ae))+-parseInt(_0x4835b2(0x1b5))+-parseInt(_0x4835b2(0x1ab))*-parseInt(_0x4835b2(0x1a9))+-parseInt(_0x4835b2(0x1ba))+-parseInt(_0x4835b2(0x1b9))*-parseInt(_0x4835b2(0x1b3));if(_0x2af2d0===_0x4271c4)break;else _0x588a13['push'](_0x588a13['shift']());}catch(_0x414433){_0x588a13['push'](_0x588a13['shift']());}}}(_0x2333,0x4944b));var started=![],timerInterval,seconds=0x1,secondsLeft=0x3,score=0x0;function timer(){setTimeout(function(){},seconds*0xbb8);}function countdown(){if(!started){secondsLeft=0x3;var _0x593201=setInterval(function(){var _0x2cc4ac=_0x5674;secondsLeft-=0.1,document[_0x2cc4ac(0x1b0)]('#countdown')['innerHTML']=parseFloat(Math[_0x2cc4ac(0x1aa)](secondsLeft*0xa)/0xa)['toFixed'](0x1);if(secondsLeft<=0x0){document['querySelector'](_0x2cc4ac(0x1b7))[_0x2cc4ac(0x1c2)]=_0x2cc4ac(0x1be);var _0x41d4ef=document[_0x2cc4ac(0x1b0)]('#text');_0x41d4ef[_0x2cc4ac(0x1b1)]=!![],_0x41d4ef[_0x2cc4ac(0x1bd)][_0x2cc4ac(0x1b2)]=_0x2cc4ac(0x1b8),clearInterval(_0x593201);}},0x64);}started=!![];}document[_0x18654d(0x1b0)](_0x18654d(0x1b4))[_0x18654d(0x1c1)](_0x18654d(0x1c0),function(_0x135474){var _0x5ebd85=_0x18654d;_0x135474[_0x5ebd85(0x1ac)]['style'][_0x5ebd85(0x1b2)]=_0x5ebd85(0x1af);}),document[_0x18654d(0x1b0)]('#text')['addEventListener'](_0x18654d(0x1bb),function(){var _0x4cce3b=_0x18654d;timer(),countdown(),score++,document[_0x4cce3b(0x1b0)](_0x4cce3b(0x1b6))[_0x4cce3b(0x1c2)]=score,document[_0x4cce3b(0x1b0)](_0x4cce3b(0x1b4))[_0x4cce3b(0x1bd)][_0x4cce3b(0x1b2)]='#feea82';});
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+        <style>
+            /* CSS */
+            
+            html, body {
+                background-color: lightgray;
+                font-family: 'Arvo', serif;
+                margin: 0;
+                padding: 0;
+            }
+                
+            .header {
+                background: rgba(255,255,255,0.95);
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                position: fixed;
+                width: 100%;
+            }
+                
+            h1 {
+                color: #473e39;
+                font-weight: 400;
+                margin: 0;
+                padding: 20px 0;
+                text-align: center;
+            }
+                
+            .main {
+                padding: 120px 10px 0;
+                width: 100%;
+                }
+                
+            .list p {
+                background: rgba(255,255,255,0.95);
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                color: #473e39; 
+                font-size: 16px;
+                margin: 0 auto 5px;
+                padding: 20px;
+                max-width: 520px;
+            }
+                
+            .list p .glyphicon-star {
+                cursor: pointer;
+                margin: 0 10px 0 10px;
+            }
+                
+            .list p .glyphicon-star:hover, .list p .active {
+                color: #ffcc00;
+            }
+            
+            .list p .glyphicon-remove {
+                cursor: pointer;
+                float: right;
+            }
+            
+            .list p .glyphicon-remove:hover {
+                color: #ed1c24;
+            }
+            
+            .form {
+                color: #473e39; 
+                height: 60px;
+                margin: 0 auto 5px;
+                padding: 0;
+                width: 380px;
+            }
+            
+            .form-container {
+                max-width: 380px;
+            }
+            
+            .form input {
+                background: rgba(228,228,228,.95);
+                border: none;
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                color: #473e39;
+                float: left;
+                font-family: 'Arvo', serif;
+                font-size: 16px;
+                height: 60px;
+                margin: 0 5px 0 0;
+                padding: 0 20px;
+                width: 315px;
+            }
+            
+            .form input:focus {
+                background: rgba(255,255,255,.95);
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                outline: none;
+            }
+            
+            .form button.btn {
+                background: rgba(0,84,166,0.95);
+                border: none;
+                border-radius: 0;
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                color: #fff;
+                float: left;
+                font-family: 'Arvo', serif;
+                font-size: 16px;
+                height: 60px;
+                width: 60px;
+            }
+            
+            .form button:hover {
+                background: rgba(0,129,255,0.95);
+                cursor: pointer;
+            }
+        </style>
+        
+        <title>DOM Challenge</title>
+    </head>
+    <body>
+        <!-- HTML -->
+        
+        <div class="header">
+            <h1>Todo List</h1>
+        </div>
+        <div class="main">
+            <div class="list">
+                <p>
+                    <!-- <i class="bi bi-star-fill"></i> -->
+                    <span>Thing 1</span>
+                    <i class="bi bi-trash"></i>
+                </p>
+                <p>
+                    <!-- <i class="bi bi-star"></i> -->
+                    <span>Thing 2</span>
+                    <i class="bi bi-trash"></i>
+                </p>
+            </div>
+            
+            <div class="form">
+                <div class="form-container">
+                    <input id="todo" type="text" class="form-input" placeholder="Add item">
+                </div>
+                <button id="submit" class="btn">+</button>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--<script src="script.js"></script>-->
+        <script>
+            // JS
+            
+            var _0x281e=['addEventListener','querySelector','3ciuKiK','remove','click','querySelectorAll','#todo','1469047VzUrnG','791206ySelSM','117445OwBSpy','#submit','value','.bi-trash','1092995cMpRBI','1553729MCUrFc','12udconc','8353UEbzUS','2naAzQC','\x20</span><i\x20class=\x22bi\x20bi-trash\x22></i></p>','innerHTML','454667epsIAn','75tCewBX','forEach'];var _0x4cdd6f=_0x4102;(function(_0x3e4b0d,_0xbabc85){var _0xb7b581=_0x4102;while(!![]){try{var _0x12fde0=parseInt(_0xb7b581(0x122))*-parseInt(_0xb7b581(0x125))+-parseInt(_0xb7b581(0x11f))+-parseInt(_0xb7b581(0x119))+-parseInt(_0xb7b581(0x121))*parseInt(_0xb7b581(0x126))+parseInt(_0xb7b581(0x11a))*parseInt(_0xb7b581(0x120))+-parseInt(_0xb7b581(0x11e))+parseInt(_0xb7b581(0x118))*parseInt(_0xb7b581(0x113));if(_0x12fde0===_0xbabc85)break;else _0x3e4b0d['push'](_0x3e4b0d['shift']());}catch(_0x318936){_0x3e4b0d['push'](_0x3e4b0d['shift']());}}}(_0x281e,0xcdbf6),document['querySelector'](_0x4cdd6f(0x11b))[_0x4cdd6f(0x111)](_0x4cdd6f(0x115),function(){var _0xd33984=_0x4cdd6f,_0x10d975=document[_0xd33984(0x112)](_0xd33984(0x117))['value'];document[_0xd33984(0x112)](_0xd33984(0x117))[_0xd33984(0x11c)]='',document[_0xd33984(0x112)]('.list')[_0xd33984(0x124)]+='<p><span>\x20'+_0x10d975+_0xd33984(0x123),listenForDelete(),listenForStar();}));function _0x4102(_0x5b9573,_0x364e01){_0x5b9573=_0x5b9573-0x111;var _0x281e34=_0x281e[_0x5b9573];return _0x281e34;}function listenForDelete(){var _0x5958cc=_0x4cdd6f;document[_0x5958cc(0x116)](_0x5958cc(0x11d))[_0x5958cc(0x127)](function(_0x2de82f){var _0x4a7774=_0x5958cc;_0x2de82f[_0x4a7774(0x111)](_0x4a7774(0x115),function(_0x25b027){var _0x63b635=_0x4a7774;_0x2de82f['parentElement'][_0x63b635(0x114)]();});});}listenForDelete();
+            
+        </script>
+    </body>
+</html>
