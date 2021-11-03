@@ -19,7 +19,7 @@ Students love making websites with HTML and CSS, but they are often hungry for i
 ---
 
 ## Tools Used
-As mentioned, students should have a basic knowledge of HTML, CSS, and JS. The [CS50 IDE](https://ide.cs50.io/) is a great cloud-based IDE, but [repl.it](https://replit.com/) could also be used. 
+Students should have a basic knowledge of HTML, CSS, and JS. The [CS50 IDE](https://ide.cs50.io/) is a great cloud-based IDE, but [repl.it](https://replit.com/) could also be used. 
 
 ---
 
@@ -32,7 +32,6 @@ As mentioned, students should have a basic knowledge of HTML, CSS, and JS. The [
 ## Lessons
 Total length: 2 Weeks
 
-(list each lesson with main topic(s))
 * Basics
   * `.querySelector()`
   * `.innerHTML`
