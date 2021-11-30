@@ -35,6 +35,7 @@ Total length: 2 Weeks
 * Basics
   * `.querySelector()`
   * `.innerHTML`
+  * _Standard: 9-12.CT.4_
 * Details
   * `.attribute` (get/set)
   * `.style.propertyName` (get/set)
@@ -42,15 +43,19 @@ Total length: 2 Weeks
     * `.add()`
     * `.remove()`
     * `.toggle()`
+  * _Standard: 9-12.CT.4_
 * Creating
   * `document.createElement()`
   * `element.appendChild()`
   * `element.insertBefore()`
+  * _Standard: 9-12.CT.4_
 * Iterating
   * `.querySelectorAll()`
   * `.forEach()`
+  * _Standard: 9-12.CT.4_
 * Events
   * `.addEventListener()`
+  * _Standard: 9-12.CT.4_
 * Input
   * text
     * `.value`
@@ -60,10 +65,15 @@ Total length: 2 Weeks
     * `.querySelector`
   * select
     * Event: `change` --> `.value`
+  * _Standard: 9-12.CT.4_
 * DOM Challenge Project (planning)
+  * _Standard: 9-12.CT.8_
 * DOM Challenge Project (coding)
+  * _Standard: 9-12.CT.8_
 * DOM Challenge Project (coding)
+  * _Standard: 9-12.CT.8_
 * DOM Challenge Project (demos + reflection/writeup)
+  * _Standard: 9-12.CT.8_
 
 ---
 
