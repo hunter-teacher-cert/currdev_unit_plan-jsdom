@@ -19,7 +19,9 @@ Students love making websites with HTML and CSS, but they are often hungry for i
 ---
 
 ## Tools Used
-Students should have a basic knowledge of HTML, CSS, and JS. The [CS50 IDE](https://ide.cs50.io/) is a great cloud-based IDE, but [repl.it](https://replit.com/) could also be used. 
+Students should have a basic knowledge of HTML, CSS, and JS. The [CS50 IDE](https://ide.cs50.io/) is a great cloud-based IDE, but [repl.it](https://replit.com/) could also be used. [Github Classroom](https://classroom.github.com) is a great way to distribute code, then collect it and give feedback.
+
+Read more about the tools [here](tools.md).
 
 ---
 
