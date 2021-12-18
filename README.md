@@ -14,7 +14,20 @@ Students love making websites with HTML and CSS, but they are often hungry for i
 ---
 
 ## Standards Referenced
-(select one of the standards sets reviewed in class (CSTA, NY, MA, RI), include a link and a brief explanation as to why you selected that set)
+
+[Standard: 9-12.CT.4](http://www.nysed.gov/common/nysed/files/programs/curriculum-instruction/computer-science-digital-fluency-standards-k-12.pdf)
+
+> Implement a program using a combination of student-defined and third-party functions to organize the computation.
+
+This standard captures the essence of the 6 DOM lessons. Functions defined in Javascript ES6 are available to students and allow them to write  mini-programs accordingly.
+
+[Standard: 9-12.CT.8](http://www.nysed.gov/common/nysed/files/programs/curriculum-instruction/computer-science-digital-fluency-standards-k-12.pdf)
+
+> Develop a program that effectively uses control structures in order to create a computer program for practical intent, personal expression, or to address a societal issue.
+
+This standard captures the essence of the project. Students will choose one of the 10 projects and must apply their learning for a practical intent.
+
+
 
 ---
 
