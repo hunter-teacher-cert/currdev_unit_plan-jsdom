@@ -52,7 +52,8 @@ For the next few days, we will be working on a project. You will have 10 pre-wri
 Here is where to find 3 versions of the code for each program:
 * [Starter code](../code/dom-challenge/starter-code)
 * [Solutions](../code/dom-challenge/solutions)
-* [Fully-functioning programs, solutions obfuscated (hidden)](../code/dom-challenge/starter-code)
+* [Fully-functioning programs, solutions obfuscated (hidden)](../code/dom-challenge/solutions-hidden)
+  * There is a [student-facing page](../code/dom-challenge/solutions-hidden/index.html) for easy browsing of these programs.
 
 NOTE: the [characters](../code/dom-challenge/characters) folder contains all images needed for the **Magazine Message Speller** for all 3 versions of the code.
 
