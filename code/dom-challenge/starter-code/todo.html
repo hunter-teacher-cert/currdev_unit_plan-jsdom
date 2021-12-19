@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+        <style>
+            /* CSS */
+            
+            html, body {
+                background-color: lightgray;
+                font-family: 'Arvo', serif;
+                margin: 0;
+                padding: 0;
+            }
+                
+            .header {
+                background: rgba(255,255,255,0.95);
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                position: fixed;
+                width: 100%;
+            }
+                
+            h1 {
+                color: #473e39;
+                font-weight: 400;
+                margin: 0;
+                padding: 20px 0;
+                text-align: center;
+            }
+                
+            .main {
+                padding: 120px 10px 0;
+                width: 100%;
+                }
+                
+            .list p {
+                background: rgba(255,255,255,0.95);
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                color: #473e39; 
+                font-size: 16px;
+                margin: 0 auto 5px;
+                padding: 20px;
+                max-width: 520px;
+            }
+                
+            .list p .glyphicon-star {
+                cursor: pointer;
+                margin: 0 10px 0 10px;
+            }
+                
+            .list p .glyphicon-star:hover, .list p .active {
+                color: #ffcc00;
+            }
+            
+            .list p .glyphicon-remove {
+                cursor: pointer;
+                float: right;
+            }
+            
+            .list p .glyphicon-remove:hover {
+                color: #ed1c24;
+            }
+            
+            .form {
+                color: #473e39; 
+                height: 60px;
+                margin: 0 auto 5px;
+                padding: 0;
+                width: 380px;
+            }
+            
+            .form-container {
+                max-width: 380px;
+            }
+            
+            .form input {
+                background: rgba(228,228,228,.95);
+                border: none;
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                color: #473e39;
+                float: left;
+                font-family: 'Arvo', serif;
+                font-size: 16px;
+                height: 60px;
+                margin: 0 5px 0 0;
+                padding: 0 20px;
+                width: 315px;
+            }
+            
+            .form input:focus {
+                background: rgba(255,255,255,.95);
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                outline: none;
+            }
+            
+            .form button.btn {
+                background: rgba(0,84,166,0.95);
+                border: none;
+                border-radius: 0;
+                box-shadow: 0 2px 2px rgba(0,0,0,.15);
+                color: #fff;
+                float: left;
+                font-family: 'Arvo', serif;
+                font-size: 16px;
+                height: 60px;
+                width: 60px;
+            }
+            
+            .form button:hover {
+                background: rgba(0,129,255,0.95);
+                cursor: pointer;
+            }
+        </style>
+        
+        <title>DOM Challenge</title>
+    </head>
+    <body>
+        <!-- HTML -->
+        
+        <div class="header">
+            <h1>Todo List</h1>
+        </div>
+        <div class="main">
+            <div class="list">
+                <p>
+                    <!-- <i class="bi bi-star-fill"></i> -->
+                    <span>Thing 1</span>
+                    <i class="bi bi-trash"></i>
+                </p>
+                <p>
+                    <!-- <i class="bi bi-star"></i> -->
+                    <span>Thing 2</span>
+                    <i class="bi bi-trash"></i>
+                </p>
+            </div>
+            
+            <div class="form">
+                <div class="form-container">
+                    <input id="todo" type="text" class="form-input" placeholder="Add item">
+                </div>
+                <button id="submit" class="btn">+</button>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--<script src="script.js"></script>-->
+        <script>
+            // JS
+            
+            
+            
+
+            // Extension: uncomment the star HTML code and add the functionality of being able to toggle the star type
+            
+            
+        </script>
+    </body>
+</html>

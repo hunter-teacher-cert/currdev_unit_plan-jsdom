@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+        <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+        <style>
+            /* CSS */
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .calculator{
+                flex: 0 0 95%;
+            }
+            .screen{
+                width: 100%;
+                font-size: 7rem;
+                padding: 0.5rem;
+                background: rgb(41,41,56);
+                color: white;
+                border:none;
+            }
+
+            .buttons{
+                display: flex;
+                flex-wrap: wrap;
+                transition: all 0.5s linear;
+            }
+
+            button{
+                flex:0 0 25%;
+                border: 1px solid black;
+                padding: 0.25rem 0;
+                transition: all 2s ease;
+            }
+            button:hover{
+                background: blue;
+            }
+            .btn-yellow{
+                background: rgb(245,146,62);
+                color: white;
+            }
+            .btn-grey{
+                background: rgb(224,224,224);
+            }
+            .btn,.btn-equal,.btn-clear{
+                font-size: 4rem;
+            }
+            .btn-equal{
+                background: green;
+            }
+            .btn-clear{
+                background: red;
+            }
+        </style>
+        
+        <title>DOM Challenge</title>
+    </head>
+    <body>
+        <!-- HTML -->
+        <section class="calculator">
+            <form>
+                <input type="text" name="" id="" class="screen">
+            </form>
+            <div class="buttons">
+                <!-- yellow -->
+                <button type="button" class="btn btn-yellow" data-num="*">*</button>
+                <button type="button" class="btn btn-yellow" data-num="/">/</button>
+                <button type="button" class="btn btn-yellow" data-num="-">-</button>
+                <button type="button" class="btn btn-yellow" data-num="+">+</button>
+                <!-- grey buttons -->
+                <button type="button" class="btn btn-grey" data-num=".">.</button>
+                <button type="button" class="btn btn-grey" data-num="9">9</button>
+                <button type="button" class="btn btn-grey" data-num="8">8</button>
+                <button type="button" class="btn btn-grey" data-num="7">7</button>
+                <button type="button" class="btn btn-grey" data-num="6">6</button>
+                <button type="button" class="btn btn-grey" data-num="5">5</button>
+                <button type="button" class="btn btn-grey" data-num="4">4</button>
+                <button type="button" class="btn btn-grey" data-num="3">3</button>
+                <button type="button" class="btn btn-grey" data-num="2">2</button>
+                <button type="button" class="btn btn-grey" data-num="1">1</button>
+                <button type="button" class="btn btn-grey" data-num="0">0</button>
+                <button type="button" class="btn-equal btn-grey">=</button>
+                <button type="button" class="btn-clear btn-grey">C</button>
+            </div>
+           </section>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--<script src="script.js"></script>-->
+        <script>
+            // JS
+
+            var _0x5b8f=['dataset','3130wnLleB','Please\x20Enter\x20a\x20Value','querySelector','10gCVZFZ','18889UcOixt','229FZXzFX','.screen','click','505923KAwpUh','134476FUUmKf','forEach','target','.btn-equal','1JAPMvu','value','.btn-clear','22600fDGzGe','querySelectorAll','409567zQnfoc','.btn','addEventListener','1yuHrME','127685CCnbvi'];var _0x5d7c9a=_0x5f1d;(function(_0x39dedf,_0x337162){var _0x51d9cb=_0x5f1d;while(!![]){try{var _0x13ab12=parseInt(_0x51d9cb(0xaa))*-parseInt(_0x51d9cb(0x9d))+parseInt(_0x51d9cb(0xa7))+parseInt(_0x51d9cb(0xb1))*-parseInt(_0x51d9cb(0xa2))+-parseInt(_0x51d9cb(0xa5))*parseInt(_0x51d9cb(0xb0))+-parseInt(_0x51d9cb(0x9e))+parseInt(_0x51d9cb(0xad))*parseInt(_0x51d9cb(0x9a))+parseInt(_0x51d9cb(0xab));if(_0x13ab12===_0x337162)break;else _0x39dedf['push'](_0x39dedf['shift']());}catch(_0xdb699f){_0x39dedf['push'](_0x39dedf['shift']());}}}(_0x5b8f,0x5a05e));function _0x5f1d(_0x489620,_0x4856e5){_0x489620=_0x489620-0x9a;var _0x5b8ff5=_0x5b8f[_0x489620];return _0x5b8ff5;}var screen=document['querySelector'](_0x5d7c9a(0x9b)),buttons=document[_0x5d7c9a(0xa6)](_0x5d7c9a(0xa8)),clear=document[_0x5d7c9a(0xaf)](_0x5d7c9a(0xa4)),equal=document[_0x5d7c9a(0xaf)](_0x5d7c9a(0xa1));buttons[_0x5d7c9a(0x9f)](function(_0xd8a7e){var _0x841c09=_0x5d7c9a;_0xd8a7e[_0x841c09(0xa9)](_0x841c09(0x9c),function(_0x298b2e){var _0x29a9c5=_0x841c09,_0x5379f6=_0x298b2e[_0x29a9c5(0xa0)][_0x29a9c5(0xac)]['num'];screen['value']+=_0x5379f6;});}),equal[_0x5d7c9a(0xa9)](_0x5d7c9a(0x9c),function(_0x2981ed){var _0x4a54e6=_0x5d7c9a;if(screen['value']==='')screen[_0x4a54e6(0xa3)]=_0x4a54e6(0xae);else{var _0x134ed5=eval(screen['value']);screen[_0x4a54e6(0xa3)]=_0x134ed5;}}),clear[_0x5d7c9a(0xa9)](_0x5d7c9a(0x9c),function(_0x9c136c){var _0x468e4d=_0x5d7c9a;screen[_0x468e4d(0xa3)]='';});
+            
+        </script>
+    </body>
+</html>

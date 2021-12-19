@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+        <style>
+            /* CSS */
+            html, body {
+                margin: 0;
+                padding: 0;
+                font-family: "Open Sans", sans-serif;
+            }
+            
+            .header {
+                background: #ffe780;
+                margin-bottom: 40px;
+                padding: 10px 0;
+            }
+            
+            .header img {
+                width: 90px;
+                margin: -10px 10px 0 0;
+            }
+            
+            .header h1 {
+                margin: 0;
+                display: inline-block;
+            }
+                
+            .meme {
+                position: relative;
+            }
+                
+            .top-caption,
+                .bottom-caption {
+                font-family: Impact, sans-serif;
+                color: #fff;
+                text-shadow: #000 0px 0px 6px;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 50px;
+            }
+                
+            .top-caption {
+                top: 10px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                position: absolute;
+            }
+                
+            .bottom-caption {
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                position: absolute;
+            }
+                
+            .tool h2 {
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+                
+            .tool form label {
+                margin-bottom: 10px;
+            }
+                
+            .tool input {
+                border-radius: 0;
+                border: 0;
+                border-bottom: 5px solid #ff7171;
+                box-shadow: none;
+            }
+                
+            input[type="text"]:focus {
+                border: 0;
+                border-bottom: 5px solid #ff7171;
+                outline: 0;
+                box-shadow: none;
+            }
+        </style>
+        
+        <title>DOM Challenge</title>
+    </head>
+    <body>
+        <!-- HTML -->
+        
+        <div class="header">
+            <div class="container">
+                <h1>Meme Generator</h1>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-6">
+                        <div class="meme thumbnail">
+                            <img id="meme" src="https://img.thrfun.com/img/141/122/dog_l2.jpg">
+                            <h1 class="top-caption">U say something?</h1>
+                            <h1 class="bottom-caption">I'm all ears</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="tool">
+                            <h2>Create a meme</h2>
+                            <form role="form">
+                                <div class="form-group">
+                                    <label>Image URL</label>
+                                    <input id="image-url" type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Top text</label>
+                                    <input id="top-text" type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Bottom text</label>
+                                    <input id="bottom-text" type="text" class="form-control">
+                                </div>
+                            </form> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--<script src="script.js"></script>-->
+        <script>
+            // JS
+            
+            
+
+
+
+            // Extension: make the image always fit nicely
+            
+            
+        </script>
+    </body>
+</html>
