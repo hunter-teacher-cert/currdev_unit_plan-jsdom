@@ -1,4 +1,4 @@
-# Lesson10: DOM Challenge Project (demos + reflection/writeup)
+# Lesson 10: DOM Challenge Project (demos + reflection/writeup)
 
 
 ## Context
