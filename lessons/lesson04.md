@@ -1,4 +1,4 @@
-# Lesson 03: Iterating
+# Lesson 04: Iterating
 
 
 ## Context
@@ -70,7 +70,7 @@ Start with the following HTML:
 <p>Hello World</p>
 ```
 
-and CSS:
+CSS:
 
 ```css
 p {
