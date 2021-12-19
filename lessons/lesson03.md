@@ -158,5 +158,11 @@ Or we could insert within the `body`:
 document.body.insertBefore(h1,grayBox); // inserts h1 to the body, right before grayBox
 ```
 
+---
+
+**[Other](https://www.w3schools.com/jsref/dom_obj_all.asp)**
+
+As an extension for high-achieving students, show them other unique methods such as `.children[]`, `.parentElement`, etc.
+
 ## Practice
 Have students write any HTML and use Javascript to make _anything_ that demonstrates their understanding of today's concepts.

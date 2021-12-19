@@ -43,9 +43,9 @@ Introduce the 6 concepts that will be learned:
   * Now: ID or single element
   * _Later: Class or all elements_
 * `.innerHTML`
-  * `.innerHTML = ` for reading the content between the opening/closing tags
-  * `.innerHTML = ` for setting the content
-  * `.innerHTML += ` for adding to the content (concatenating)
+  * `.innerHTML =` for reading the content between the opening/closing tags
+  * `.innerHTML =` for setting the content
+  * `.innerHTML +=` for adding to the content (concatenating)
 
 ---
 
